@@ -1,85 +1,90 @@
-# ML4W Dotfiles for Hyprland
-> Developmemt Version 2.9.8.2 RC1
+# My shitty dotfiles
 
-An advanced configuration of Hyprland for Arch Linux based distributions. This package includes an installation script to install and set up the required components.
+A configuration of Hyprland for Arch Linux based distributions.
 
-![image](https://github.com/user-attachments/assets/c1af2d8a-142b-4285-9b63-92862a7868c5)
+## Prep
 
-> About the screenshot: The dock can be enabled in the ML4W Sidebar or Settings app. The waybar theme is ML4W Modern White.
-
-YouTube Video https://youtu.be/sVFnd5LAYAc
-
-## Installation
-
-The installation should work on all Arch Linux and Fedora based distributions. [You can find more information here](https://github.com/mylinuxforwork/dotfiles/wiki).
-
-I recommend to install a base Hyprland system before installing the ML4W Hyprland Dotfiles. Then you have a stable starting point and can test Hyprland on your system beforehand. Hyprland is complex, under ongoing development, and requires additional components.
-
-You can find the Hyprland Installation instructions here: https://wiki.hyprland.org/Getting-Started/Installation/
-
-> IMPORTANT: Please make sure that all packages on your system are updated before running the installation script.
-
-> PLEASE NOTE: Every Linux distribution, setup, and personal configuration can be different. Therefore, I cannot guarantee that the ML4W Dotfiles will work everywhere. You install at your own risk.
-
-### Arch Linux (based)
-
+If using zen kernel make sure to not foeget this :)
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/setup-arch.sh)
+linux-zen-headers
 ```
 
-YouTube Video https://youtu.be/sVFnd5LAYAc
-
-You can also install the main release with your preferred AUR helper.
-
 ```shell
-yay -S ml4w-hyprland
-ml4w-hyprland-setup
+systemctl enable systemd-timesyncd.service --now
+timedatectl set-ntp true
 ```
 
-You can install the rolling release with
-
 ```shell
-yay -S ml4w-hyprland-git
-ml4w-hyprland-setup
+echo "[options]" | sudo tee -a /etc/pacman.conf
+echo "ParallelDownloads = 10" | sudo tee -a /etc/pacman.conf
+echo "[multilib]" | sudo tee -a /etc/pacman.conf
+echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
+
+pacman -Syu
 ```
 
-Please rebuild all packages to ensure that you get the latest commit.
-
-### Fedora Linux (based)
+## If nvidia
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/setup-fedora.sh)
+sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings
 ```
 
-## Troubleshooting
+## If intel
 
-You can find solutions to common issues in the Wiki troubleshooting section: https://github.com/mylinuxforwork/dotfiles/wiki/Troubleshooting
+```shell
+sudo pacman -S mesa xf86-video-intel vulkan-intel
+```
 
-## Documentation (Wiki)
+## Actually installing shit
 
-You can find the complete documentation of the ML4W Dotfiles in the Wiki. <b>[Open the Wiki here](https://github.com/mylinuxforwork/dotfiles/wiki)</b>
+```shell
+git clone https://aur.archlinux.org/yay-git.git ~/yay-git
+cd ~/yay-git
+makepkg -si
+cd
+```
+```shell
+git clone https://github.com/pystardust/ani-cli.git
+sudo cp ani-cli/ani-cli /usr/local/bin
+rm -rf ani-cli
+```
 
-## Contributing
+```shell
+sudo pacman -S hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland hyprlock thunar ttf-font-awesome ttf-fira-sans ttf-fira-code ttf-firacode-nerd fuse2 gtk4 libadwaita jq python-gobject blueman brightnessctl jdk-openjdk pavucontrol grim slurp noto-fonts-cjk fzf gamemode mangohud openssh cpupower tlp lib32-libx11 lib32-libxcomposite lib32-mangohud neovim fastfetch pipewire pipewire-alsa pipewire-pulse wireplumber npm gdb vim flatpak ghostty yazi spotify-launcher obs-studio gnome-keyring steam steam-native-runtime wget unzip gum rsync figlet git
+```
 
-Thanks for using the ML4W Dotfiles on your system. If you find a problem or a bug, please [report your issue on this page](https://github.com/mylinuxforwork/dotfiles/issues).
+```shell
+yay -S wlogout minecraft-launcher goverlay protonup-qt hyprshot hypridle starship hyprpicker-git btop noto-fonts noto-fonts-cjk noto-fonts-emoji shotwell swww cava catnap
+```
 
-You can also visit the [ML4W Discord Server](https://discord.gg/c4fJK7Za3g) to start a discussion with other users.
+```shell
+flatpak install flathub dev.vencord.Vesktop
+flatpak install flathub app.zen_browser.zen
+flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
+```
 
-## Screenshots
+```shell
+curl -fsSL https://raw.githubusercontent.com/Axenide/Ax-Shell/main/install.sh | bash
+curl -fsSL https://ollama.com/install.sh | sh
+bash -c "$(curl -sLo- https://superfile.netlify.app/install.sh)"
+curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+```
 
-![screenshot_06022025_165339](https://github.com/user-attachments/assets/2d281632-762f-465c-99e2-6933f1507cac)
+```shell
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
 
-## Wallpaper repository
+## Setting shit up
 
-You can find my wallpaper collection in the repository https://github.com/mylinuxforwork/wallpaper
+```shell
+sudo systemctl enable cpupower.service
+sudo systemctl start cpupower.service
 
-## Inspirations
+sudo cpupower frequency-set --governor performance
 
-The following projects have inspired me:
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-- https://github.com/JaKooLit/Hyprland-Dots
-- https://github.com/prasanthrangan/hyprdots
-- https://github.com/sudo-harun/dotfiles
-- https://github.com/dianaw353/hyprland-configuration-rootfs
-
-and many more...
+sudo systemctl enable tlp
+sudo systemctl enable fstrim.timer
+```
