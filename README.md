@@ -2,12 +2,13 @@
 
 A configuration of Hyprland for Arch Linux based distributions.
 
-## Prep
+## If using zen
 
-If using zen kernel make sure to not foeget this :)
 ```shell
 linux-zen-headers
 ```
+
+## Prep
 
 ```shell
 systemctl enable systemd-timesyncd.service --now
