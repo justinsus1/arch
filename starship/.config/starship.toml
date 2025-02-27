@@ -1,0 +1,12 @@
+## ░█▀▀░▀█▀░█▀█░█▀▄░█▀▀░█░█░▀█▀░█▀█
+## ░▀▀█░░█░░█▀█░█▀▄░▀▀█░█▀█░░█░░█▀▀
+## ░▀▀▀░░▀░░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░░
+
+# Setups
+format = """
+$directory\
+$git_branch\
+$line_break\
+$character"""
+right_format = """$git_status$cmd_duration"""
+

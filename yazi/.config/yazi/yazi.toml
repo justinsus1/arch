@@ -1,0 +1,10 @@
+show_hidden = false
+
+[opener]
+edit = [
+    { run = 'nvim "$@"', block = true, for = "unix", desc = "Edit with Neovim" },
+]
+open = [
+    { run = 'nvim "$@"', block = true, for = "unix", desc = "Open with Neovim" },
+]
+
