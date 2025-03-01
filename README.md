@@ -51,7 +51,7 @@ rm -rf ani-cli
 ```
 
 ```shell
-sudo pacman -S hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland hyprlock thunar ttf-font-awesome ttf-fira-sans ttf-fira-code ttf-firacode-nerd fuse2 gtk4 libadwaita jq python-gobject blueman brightnessctl jdk-openjdk pavucontrol grim slurp noto-fonts-cjk fzf gamemode mangohud openssh cpupower tlp lib32-libx11 lib32-libxcomposite lib32-mangohud neovim fastfetch pipewire pipewire-alsa pipewire-pulse wireplumber npm gdb vim flatpak ghostty yazi spotify-launcher obs-studio gnome-keyring steam steam-native-runtime wget unzip gum rsync figlet git stow
+sudo pacman -S hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland hyprlock thunar ttf-font-awesome ttf-fira-sans ttf-fira-code ttf-firacode-nerd fuse2 gtk4 libadwaita jq python-gobject blueman brightnessctl jdk-openjdk pavucontrol grim slurp noto-fonts-cjk fzf gamemode mangohud openssh cpupower tlp lib32-libx11 lib32-libxcomposite lib32-mangohud neovim fastfetch pipewire pipewire-alsa pipewire-pulse wireplumber npm gdb vim flatpak ghostty yazi spotify-launcher obs-studio gnome-keyring steam steam-native-runtime wget unzip gum rsync figlet git stow qt5ct
 ```
 
 ```shell
