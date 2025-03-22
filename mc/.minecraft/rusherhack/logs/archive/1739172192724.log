@@ -1,0 +1,43 @@
+[2025-02-10 17:51:37] [INFO] Initializing rusherhack v2.0.5
+[2025-02-10 17:51:41] [ERROR] Failed to setup tray icon
+java.lang.UnsupportedOperationException
+	at java.desktop/java.awt.TrayIcon.<init>(TrayIcon.java:155)
+	at java.desktop/java.awt.TrayIcon.<init>(TrayIcon.java:179)
+	at java.desktop/java.awt.TrayIcon.<init>(TrayIcon.java:208)
+	at java.desktop/java.awt.TrayIcon.<init>(TrayIcon.java:238)
+	at org.rusherhack.à.<clinit>(à.java:53)
+	at org.rusherhack.ʗ.ô(ʗ.java:167)
+	at org.rusherhack.ʗ.a(ʗ.java)
+	at org.rusherhack.ʗ.<init>(ʗ.java:65)
+	at org.rusherhack.ı.<init>(ı.java:230)
+	at org.rusherhack.ı.щ(ı.java:164)
+	at org.rusherhack.mixin.MixinHelper.b(MixinHelper.java)
+	at org.rusherhack.mixin.MixinHelper.postGameStart(MixinHelper.java:153)
+	at knot//net.minecraft.class_310.handler$dbj000$postStartGame(class_310.java:12147)
+	at knot//net.minecraft.class_310.<init>(class_310.java:715)
+	at knot//net.minecraft.client.main.Main.main(Main.java:223)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+[2025-02-10 17:51:44] [INFO] rusherhack v2.0.5 finished loading.
+[2025-02-10 17:51:44] [INFO] Loading configs...
+[2025-02-10 17:56:37] [INFO] Saving configs...
+[2025-02-10 18:01:37] [INFO] Saving configs...
+[2025-02-10 18:06:37] [INFO] Saving configs...
+[2025-02-10 18:11:37] [INFO] Saving configs...
+[2025-02-10 18:16:37] [INFO] Saving configs...
+[2025-02-10 18:16:54] [INFO] [INFO] ESP has been §fdisabled
+[2025-02-10 18:17:12] [INFO] [INFO] ESP has been §fenabled
+[2025-02-10 18:17:13] [INFO] [INFO] ESP has been §fdisabled
+[2025-02-10 18:20:10] [INFO] [INFO] AutoSurround has been §fenabled
+[2025-02-10 18:20:12] [INFO] [INFO] AutoSurround has been §fdisabled
+[2025-02-10 18:20:15] [INFO] [INFO] AutoSurround has been §fenabled
+[2025-02-10 18:20:19] [INFO] [INFO] AutoSurround has been §fdisabled
+[2025-02-10 18:20:20] [INFO] [INFO] AutoSurround has been §fenabled
+[2025-02-10 18:20:21] [INFO] [INFO] AutoSurround has been §fdisabled
+[2025-02-10 18:20:22] [INFO] [INFO] AutoSurround has been §fenabled
+[2025-02-10 18:20:32] [INFO] [INFO] AutoSurround has been §fdisabled
+[2025-02-10 18:21:37] [INFO] Saving configs...
+[2025-02-10 18:23:12] [INFO] Saving configs...
+[2025-02-10 18:23:12] [INFO] RusherHack Stopped

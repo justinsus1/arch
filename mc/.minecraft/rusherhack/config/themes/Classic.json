@@ -1,0 +1,155 @@
+{
+  "name": "Classic",
+  "settings": [
+    {
+      "name": "color",
+      "value": {
+        "rgba": -939498241,
+        "themeSync": false,
+        "rainbow": false,
+        "rainbowMode": "DEFAULT",
+        "rainbowOffset": 0
+      }
+    },
+    {
+      "name": "displayscaling",
+      "value": true
+    },
+    {
+      "name": "tooltips",
+      "value": true,
+      "subSettings": [
+        {
+          "name": "delay",
+          "value": 0.0
+        },
+        {
+          "name": "settings",
+          "value": true,
+          "subSettings": [
+            {
+              "name": "delay",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "name": "textwrap",
+          "value": true
+        },
+        {
+          "name": "opacity",
+          "value": 200
+        },
+        {
+          "name": "outline",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "panels",
+      "value": null,
+      "subSettings": [
+        {
+          "name": "outline",
+          "value": true
+        },
+        {
+          "name": "height",
+          "value": 350
+        },
+        {
+          "name": "externalpanellock",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "items",
+      "value": null,
+      "subSettings": [
+        {
+          "name": "indicator",
+          "value": "VERTICAL"
+        }
+      ]
+    },
+    {
+      "name": "scrollclamp",
+      "value": false
+    },
+    {
+      "name": "blur",
+      "value": false,
+      "subSettings": [
+        {
+          "name": "screen",
+          "value": false
+        },
+        {
+          "name": "strength",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "clickgui": [
+    {
+      "name": "Chat",
+      "x": 100.0,
+      "y": 50.0,
+      "visible": true,
+      "opened": true
+    },
+    {
+      "name": "Miscellaneous",
+      "x": 290.0,
+      "y": 50.0,
+      "visible": true,
+      "opened": true
+    },
+    {
+      "name": "Client",
+      "x": 765.0,
+      "y": 50.0,
+      "visible": true,
+      "opened": true
+    },
+    {
+      "name": "Player",
+      "x": 480.0,
+      "y": 50.0,
+      "visible": true,
+      "opened": true
+    },
+    {
+      "name": "Movement",
+      "x": 385.0,
+      "y": 50.0,
+      "visible": true,
+      "opened": true
+    },
+    {
+      "name": "Combat",
+      "x": 195.0,
+      "y": 50.0,
+      "visible": true,
+      "opened": true
+    },
+    {
+      "name": "Render",
+      "x": 575.0,
+      "y": 50.0,
+      "visible": true,
+      "opened": true
+    },
+    {
+      "name": "World",
+      "x": 670.0,
+      "y": 50.0,
+      "visible": true,
+      "opened": true
+    }
+  ]
+}

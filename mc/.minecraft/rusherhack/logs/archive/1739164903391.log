@@ -1,0 +1,24 @@
+[2025-02-10 16:21:36] [INFO] Initializing rusherhack v2.0.5
+[2025-02-10 16:21:41] [ERROR] Failed to setup tray icon
+java.lang.UnsupportedOperationException
+	at java.desktop/java.awt.TrayIcon.<init>(TrayIcon.java:155)
+	at java.desktop/java.awt.TrayIcon.<init>(TrayIcon.java:179)
+	at java.desktop/java.awt.TrayIcon.<init>(TrayIcon.java:208)
+	at java.desktop/java.awt.TrayIcon.<init>(TrayIcon.java:238)
+	at org.rusherhack.à.<clinit>(à.java:53)
+	at org.rusherhack.ʗ.ô(ʗ.java:167)
+	at org.rusherhack.ʗ.a(ʗ.java)
+	at org.rusherhack.ʗ.<init>(ʗ.java:65)
+	at org.rusherhack.ı.<init>(ı.java:230)
+	at org.rusherhack.ı.щ(ı.java:164)
+	at org.rusherhack.mixin.MixinHelper.b(MixinHelper.java)
+	at org.rusherhack.mixin.MixinHelper.postGameStart(MixinHelper.java:153)
+	at knot//net.minecraft.class_310.handler$dbj000$postStartGame(class_310.java:12147)
+	at knot//net.minecraft.class_310.<init>(class_310.java:715)
+	at knot//net.minecraft.client.main.Main.main(Main.java:223)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+[2025-02-10 16:21:43] [INFO] rusherhack v2.0.5 finished loading.
+[2025-02-10 16:21:43] [INFO] Loading configs...
